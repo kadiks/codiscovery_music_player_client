@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Player</title>
+    <meta charset="utf8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <img id="thumbnail" src="" class="img-fluid" />
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-12">
+                <input type="range" id="time" />
+            </div>
+        </div> -->
+        
+        <div class="row">
+            <div class="col-12">
+                <h2 id="track-title"></h2>
+                <marquee scrollamout="30" scrolldelay="200" id="track-details"></marquee>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-4 prev">
+                <i class="material-icons" id="btn-prev">skip_previous</i>
+            </div>
+            <div class="col-4 play">
+                <i class="material-icons" id="btn-play">play_arrow</i>
+                <i class="material-icons" id="btn-pause">pause</i>
+            </div>
+            <div class="col-4 next">
+                <i class="material-icons" id="btn-next">skip_next</i>
+            </div>
+        </div>
+    </div>
+    <audio id="player" controls autoplay>
+        <source src="" type="audio/x-m4a">
+    </audio>
+    <input id="term" type="text" /><button id="search">Search</button>
+    <button id="play">Play</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
